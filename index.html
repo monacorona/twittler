@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>precourse twittler</title>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" href="twittler.css">
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <div class="main">
+       <img src = "https://www.spreadshirt.com/image-server/v1/designs/12679271,width=178,height=178/flappy-bird-blue.png">
+       <h1>mona's twittler</h1>
+    </div>
+    <script src="main.js"></script>
+    <footer>
+    </footer>
   </body>
 </html>
+
+
+
